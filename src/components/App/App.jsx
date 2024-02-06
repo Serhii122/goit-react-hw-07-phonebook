@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
-import css from './App.module.css';
 import { useDispatch } from 'react-redux';
 import { fetchContacts } from '../../redux/contacts/contactsSlice.operations';
 import { ContactForm } from '../contactForm/contactForm';
 import { Filter } from '../filter/filter';
 import { ContactList } from '../contactList/contactList';
 
-
-
+import css from './App.module.css';
 
 export const App = () => {
   const dispatch = useDispatch();
